@@ -99,7 +99,7 @@ export default function App() {
       />
 
       {/* Main Responsive Canvas (Optimized for both mobile and wide website displays) */}
-      <main className="flex-1 w-full pt-20 md:pt-24 flex flex-col relative">
+      <main className="flex-1 w-full pt-24 md:pt-28 flex flex-col relative">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentScreen}
