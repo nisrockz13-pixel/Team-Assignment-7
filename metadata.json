@@ -1,0 +1,6 @@
+{
+  "name": "Vélure Beauty & Wellness",
+  "description": "Luxury editorial beauty treatments, artisan discovery, and bespoke appointment booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

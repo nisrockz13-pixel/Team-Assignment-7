@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Vélure Beauty &amp; Wellness</title>
+    <meta name="description" content="Luxury editorial beauty treatments, artisan discovery, and bespoke appointment booking." />
+    <meta property="og:title" content="Vélure Beauty &amp; Wellness" />
+    <meta property="og:description" content="Luxury editorial beauty treatments, artisan discovery, and bespoke appointment booking." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <script>
+      (function() {
+        // Suppress unhandled third-party script errors (e.g. Disqus embeds/trackers) from bubbling as fatal errors
+        window.addEventListener('error', function(event) {
+          var msg = event && (event.message || '');
+          var target = event && event.target;
+          var isTag = target && (target.tagName === 'SCRIPT' || target.tagName === 'LINK');
+          var src = (target && (target.src || target.href)) || '';
+          
+          if (
+            msg === 'Script error.' ||
+            msg === 'Script error' ||
+            (typeof msg === 'string' && msg.indexOf('Script error') !== -1) ||
+            (isTag && (src.indexOf('disqus') !== -1 || src.indexOf('disquscdn') !== -1 || src.indexOf('liadm') !== -1))
+          ) {
+            if (event.preventDefault) event.preventDefault();
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(event) {
+          var reason = (event && event.reason && (event.reason.message || event.reason)) || '';
+          if (typeof reason === 'string' && (reason.indexOf('disqus') !== -1 || reason.indexOf('Script error') !== -1)) {
+            if (event.preventDefault) event.preventDefault();
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+          }
+        }, true);
+
+        var _prevOnError = window.onerror;
+        window.onerror = function(message, source) {
+          if (
+            message === 'Script error.' ||
+            (typeof message === 'string' && (message.indexOf('Script error') !== -1 || message.indexOf('disqus') !== -1)) ||
+            (source && (source.indexOf('disqus') !== -1 || source.indexOf('disquscdn') !== -1))
+          ) {
+            return true;
+          }
+          if (typeof _prevOnError === 'function') {
+            return _prevOnError.apply(this, arguments);
+          }
+          return false;
+        };
+      })();
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "ycgf9ugqf0");
+    </script>
+  </head>
+  <body class="bg-[#fff8f6] text-[#1f1b19] antialiased selection:bg-[#EBD9CC] selection:text-[#121214]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
