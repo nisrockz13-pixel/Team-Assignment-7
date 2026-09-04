@@ -59,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="fixed top-0 w-full z-50 pt-safe bg-[#fff8f6]/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-[#efe6e4]/60 transition-all">
-      <div className="max-w-7xl mx-auto h-16 px-4 md:px-8 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto h-18 md:h-20 px-4 md:px-8 flex items-center justify-between gap-4">
         {/* Left: Back (if subscreen) and Single Vélure Logo */}
         <div className="flex items-center gap-3 min-w-0">
           {isSubScreen && (
@@ -72,14 +72,14 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
           )}
 
-          {/* Single Unified Vélure Logo */}
+          {/* Single Unified Vélure Logo - Prominently sized on the masthead */}
           <div
             onClick={() => onNavigate('discover')}
-            className="flex items-center gap-2 cursor-pointer group"
+            className="flex items-center gap-2 cursor-pointer group py-1"
           >
             <img
               alt="Vélure"
-              className="h-8 md:h-9 w-auto object-contain flex-shrink-0 transition-transform group-hover:scale-105"
+              className="h-11 sm:h-12 md:h-14 w-auto object-contain flex-shrink-0 transition-transform group-hover:scale-105"
               src={LOGO_URL}
             />
           </div>
